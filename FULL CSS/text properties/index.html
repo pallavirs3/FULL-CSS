@@ -1,0 +1,46 @@
+<!-- text properties
+    1.text-align: left/right/center
+    2.text decoration:underline/oveerline/linethrough
+    3.font-weight:normal/bold/lighter,  range-100 to 900
+    4.font-family
+    5.units,,absolute,,,pixels(px)--96px=1 inch
+    6.line height:2px/3/normal
+    7.text-tranform:uppercase/lowercase/capatalize/none -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+        }
+        /* Text Alignment */
+        #box1{
+            text-align: center;
+            color: aqua;
+            background-color: blue;
+            font-weight: lighter;
+        }
+
+        #box2{
+            text-decoration: line-through;
+            text-decoration-style: dashed;
+            text-decoration: none;
+            font-weight: 900;
+            font-family: sans-serif;
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="box1" class="box">box1</h1>
+    <h1 id="box2" class="box">box2</h1>
+    <h1 id="box3" class="box">box3</h1>
+    <h1 id="box4" class="box">box4</h1>
+    <p style="line-height: normal; text-transform: uppercase;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error dolor, recusandae asperiores sunt ad minus itaque aspernatur commodi mollitia provident aperiam, deleniti iste rerum illum quas exercitationem. Provident, sapiente.</p>
+</body>
+</html>
