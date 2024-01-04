@@ -1,0 +1,72 @@
+<!--position: Relative;=positions the element relative to its normal position and leave a gap at its normal position-->
+
+<!-- position: absolute;=positions the element relative to its first parent position and overlap on other element without leaving a gap-->
+
+<!-- position:static;=default position and stay in normal flow and doesn't support positions properties(top,right,bottom&left) -->
+
+<!--position:fixed;= positions the element relative to the browser window -->
+<!--position:sticky;=(hybrid of relative and fixed) the element is treated as relative positioned until it crosses a specified threshold, at which point it is treated as fixed positioned  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #box1{
+
+        /* position: absolute; */
+
+        height: 100px;
+        width: 100px;
+        border: 3px solid red;
+        margin: 2px;
+       }
+       #box2{
+        /* position: relative; */
+        /* position: absolute; */
+        /* top: 20px; */
+        /* right: 30px; */
+        height: 100px;
+        width: 100px;
+        border: 3px solid red;
+        margin: 2px;
+
+       }
+       #box3{
+        position: sticky;
+        top: 2px;        
+        height: 100px;
+        width: 100px;
+        border: 3px solid red;
+        margin: 2px;
+
+       }
+       #box4{
+        position: fixed;
+        right: 2px;
+        bottom: 2px;
+        height: 100px;
+        width: 100px;
+        border: 3px solid red;
+        margin: 2px;
+
+       }
+       .box{
+        display: inline-block;
+       }
+       .container{
+        height: 33333px;
+       }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box1" class="box">Box1</div>
+        <div id="box2" class="box">Box2</div>
+        <div id="box3" class="box">Box3</div>
+        <div id="box4" class="box">Box4</div>
+    </div>
+</body>
+</html>
